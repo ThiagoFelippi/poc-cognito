@@ -24,3 +24,7 @@ Use postman collection fixed in card
 
 [nodemon+typescript](https://danieldcs.com/configurando-node-js-com-typescript-nodemon-e-jest/)
 [learning cognito repo inspired](https://github.com/floydjones1/ExpressTSCognito/)
+
+#### OBS
+
+That is a poc, so I don't apply advanced topics or everthing that I know about the AWS Service. Is just a poc to consider use cognito in a personal project

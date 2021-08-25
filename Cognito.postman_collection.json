@@ -1,0 +1,74 @@
+{
+  "info": {
+    "_postman_id": "8f9d7878-85be-47d9-a3b8-51c505575e50",
+    "name": "Cognito",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "SignUp",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"username\": \"thiago\",\n    \"password\": \"Testing@12345\",\n    \"email\": \"thiago@gmail.com\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{host}}",
+          "host": ["{{host}}"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Verify",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"username\": \"thiago\",\n    \"code\": \"229209\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{host}}/verify",
+          "host": ["{{host}}"],
+          "path": ["verify"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"username\": \"thiago\",\n    \"password\": \"Testing@12345\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{host}}/login",
+          "host": ["{{host}}"],
+          "path": ["login"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
