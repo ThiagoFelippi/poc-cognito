@@ -1,4 +1,5 @@
 # poc-cognito
+
 Sign up poc using cognito
 
 ### How to start
@@ -17,14 +18,9 @@ First, you need create an user pool on your AWS account:
 Now, you will click in show details, copy your client_id and paste on env. Copy App client secret and paste at SECRET_HASH
 If you create in region different than us-east-1 you need create a new line in .env and put your region
 
-Now create an request in postman or insomnia like:
+Use postman collection fixed in card
 
-REQUEST: http://localhost:3000 <br />
-PAYLOAD: 
-```
-{
-    "status": 400,
-    "message": "User already exists",
-    "info": "BAD REQUEST"
-}
-```
+### References
+
+[nodemon+typescript](https://danieldcs.com/configurando-node-js-com-typescript-nodemon-e-jest/)
+[learning cognito repo inspired](https://github.com/floydjones1/ExpressTSCognito/)

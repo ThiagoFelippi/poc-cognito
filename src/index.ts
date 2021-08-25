@@ -3,7 +3,9 @@ import * as express from "express";
 const app = express();
 
 import { PORT } from "./config/enviroments";
-import { authService } from "./services/auth-service";
+import { signUpService } from "./services/singUp-service";
+import { authVerifyService } from "./services/auth-verify-service";
+import { signInService } from "./services/signIn-service";
 
 function setup() {
   app.use(express.json());
@@ -12,7 +14,9 @@ function setup() {
 }
 
 function routes() {
-  app.post("/", authService);
+  app.post("/", signUpService);
+  app.post("/verify", authVerifyService);
+  app.post("/login", signInService);
 }
 
 function main() {
